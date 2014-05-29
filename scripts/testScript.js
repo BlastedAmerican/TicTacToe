@@ -1,3 +1,4 @@
+var turn = 'o';
 //Demo function to just test that JS is working.
 function myFunction() { 
     document.getElementById("demo").innerHTML = "Hello JavaScript!";
@@ -20,7 +21,7 @@ function makeMark( markType, targetSquare )
 
 	if( markType == 'o' )
 	{
-		
+
         
         var img = document.getElementById('o_image')
         
@@ -34,10 +35,41 @@ function makeMark( markType, targetSquare )
     
     ctx.drawImage(img, 0, 0)
 
+}
+
+//Secondary simple test function.
+function testFunction()
+{
+	 document.getElementById("testText").innerHTML = "Its working."
+}
+
+function turnDisplay()
+{
+	var displayString = "It's the " + turn + " players turn." 
+	document.getElementById("turnDisplay").innerHTML = displayString
+}
+
+function makeNextMove( targetSquare )
+{
+
+	if( turn == 'o')
+	{
+		makeMark( 'o',targetSquare )
+		turn = 'x';
+	}
+	else
+	{
+		makeMark( 'x',targetSquare )
+		turn = 'o';
+	}
+	turnDisplay()
+
+	
+}
+
 
 
 //Secondary simple test function.
-}
 function testFunction()
 {
 	 document.getElementById("testText").innerHTML = "Its working."

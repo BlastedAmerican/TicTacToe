@@ -1,0 +1,6 @@
+TODO:
+1. Rework to prevent playing in a square a player has already played in.
+2. Add Dynamic newGame button.
+3. Add detected win condictions.
+4. Write script to build canvas's much better. Can be recursive/looping.
+5. Rewrite canvas to use event detection instead of onClick tags. (Better for some reason? Not sure why.)

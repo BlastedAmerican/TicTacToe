@@ -5,15 +5,45 @@
 
 
 <script src ="scripts/testScript.js" ></script>
-
-<canvas id="testCanvas" width="150" height="150">
+<p id = 'turnDisplay' > Click a square Start a Game! </p> 
+<canvas id="one" width="150" height="150" onclick="makeNextMove('one')" >
 	Your browser does not support canvas.
 </canvas>
+<canvas id="two" width="150" height="150" onclick="makeNextMove('two')">
+	Your browser does not support canvas.
+</canvas>
+<canvas id="three" width="150" height="150" onclick="makeNextMove('three')">
+	Your browser does not support canvas.
+</canvas>
+<br>
+<canvas id="four" width="150" height="150" onclick="makeNextMove('four')">
+	Your browser does not support canvas.
+</canvas>
+<canvas id="five" width="150" height="150" onclick="makeNextMove('five')">
+	Your browser does not support canvas.
+</canvas>
+<canvas id="six" width="150" height="150" onclick="makeNextMove('six')">
+	Your browser does not support canvas.
+</canvas>
+<br>
+<canvas id="seven" width="150" height="150" onclick="makeNextMove('seven')">
+	Your browser does not support canvas.
+</canvas>
+<canvas id="eight" width="150" height="150" onclick="makeNextMove('eight')">
+	Your browser does not support canvas.
+</canvas>
+<canvas id="nine" width="150" height="150" onclick="makeNextMove('nine')">
+	Your browser does not support canvas.
+</canvas>
+<style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+
 Placeholder text.
 <p id = 'testText' > Test Placeholder Text </p> 
 <!-- Not implemented yet! -->
 <button type="button" onclick="makeMark('o', 'testCanvas')">Click to Test Canvas O</button>
-<button type="button" onclick="makeMark('x', 'testCanvas')">Click to Test Canvas X</button>
+<button type="button" onclick="makeMark('x', 'two')">Click to Test Canvas X</button>
 <!-- Wipe isn't actually required, any non o or x input wipes. -->
 <button type="button" onclick="makeMark('wipe', 'testCanvas')">Click to Test Canvas Wipe</button>
 <!-- External scripts are working. -->
