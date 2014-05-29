@@ -1,6 +1,25 @@
 <html>
-<head><title> Tic Tac Toe with Canvas</title> </head>
+<head><title> Tic Tac Toe with Canvas</title> 
+</head>
 <body>
+
+
+<script src ="scripts/testScript.js" ></script>
+
+<canvas id="testCanvas" width="150" height="150">
+	Your browser does not support canvas.
+</canvas>
 Placeholder text.
+<p id = 'testText' > Test Placeholder Text </p> 
+<!-- Not implemented yet! -->
+<button type="button" onclick="makeMark('o', 'testCanvas')">Click to Test Canvas O</button>
+<button type="button" onclick="makeMark('x', 'testCanvas')">Click to Test Canvas X</button>
+<!-- Wipe isn't actually required, any non o or x input wipes. -->
+<button type="button" onclick="makeMark('wipe', 'testCanvas')">Click to Test Canvas Wipe</button>
+<!-- External scripts are working. -->
+<button type="button" onclick="testFunction()">Click to Test External Scripts</button>
 </body>
+<image id ='o_image' src = 'images/o.jpg' style="visibility:hidden;"></image>
+<image id ='x_image' src = 'images/x.png' style="visibility:hidden;"></image>
+<image id ='blank_image' src = 'images/blank.jpg' style="visibility:hidden;"></image>
 </html>
